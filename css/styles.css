@@ -41,7 +41,7 @@ hr {
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
-  background-size: 100%;
+  background-size: auto;
 
   text-shadow: 2px 3px 1px #FD0054;
 
@@ -89,14 +89,14 @@ hr {
 /* PROFILES */
 .profile-picture {
   display: inline-block;
-  width: 19.7%;
+  width: 19.5%;
   margin: 40px 0 0;
   padding: 0;
   text-align: center;
 }
 
 .profile-picture h4 {
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 600;
   margin: 5px 0;
 }
