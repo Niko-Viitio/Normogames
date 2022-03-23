@@ -1,9 +1,23 @@
-/*https://colorhunt.co/palette/fbf9fafd0054a800382b2024 red-white*/
+/*
+https://colorhunt.co/palette/fbf9fafd0054a800382b2024 red-white
+#A80038
+#FD0054
+#FBF9FA
+#131323
+
+*/
+
+/*
+Ilmaris custom
+#EE1E7B
+#231F20
+#FFFFFF
+*/
 
 body {
   margin: 0;
   padding: 0;
-  color: #FBF9FA;
+  color: #FFFFFF;
   line-height: 1.5;
   font-family: 'Lato', sans-serif;
 }
@@ -46,7 +60,7 @@ hr {
   text-shadow: 2px 3px 1px #FD0054;
 
   text-align: center;
-  padding: 150px;
+  padding: 50px;
 }
 
 .header h1 {
@@ -61,6 +75,10 @@ hr {
   font-size: 2.5em;
   margin: 10px 0 0;
   font-weight: 600;
+}
+
+.header img {
+  width: 800px;
 }
 
 /* BODY */
