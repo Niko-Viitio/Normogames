@@ -19,18 +19,20 @@ hr {
 }
 
 .white {
-  color: #A80038;
+  color:  #131323;
   background-color: #FBF9FA;
 }
 
 .red {
   color: #FBF9FA;
   background-color: #A80038;
+  background-image: linear-gradient(45deg, #131323 , #A80038);
 }
 
 /* NAVIGATION BAR */
 .navbar {
   background-color: #A80038;
+  background-image: linear-gradient(45deg, #131323 , #A80038);
 }
 
 .navbar ul {
@@ -71,7 +73,7 @@ hr {
   background-position: center;
   background-size: cover;
 
-  text-shadow: 2px 3px 1px #FD0054;
+  text-shadow: 2px 3px 1px #131323;
 
   text-align: center;
   padding: 100px;
@@ -184,22 +186,22 @@ hr {
 
 /* FOOTER */
 .footer {
-  background-color: #A80038;
+  background-color: #131323;
   text-align: center;
   padding: 12px 0;
 }
 
 .footer i {
-  color: #FD0054;
+  color: #A80038;
   margin: 0 8px 10px;
 }
 
 .footer i:hover {
-  color: #FBF9FA;
+  color: #FD0054;
 }
 
 .footer p {
-  color: #FBF9FA;
+  color: #A80038;
   text-align: center;
   font-size: 1.2em;
   margin: 0;
