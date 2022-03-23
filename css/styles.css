@@ -1,4 +1,5 @@
 /*
+OLD HEADER FONT: Staatliches
 https://colorhunt.co/palette/fbf9fafd0054a800382b2024 red-white
 #A80038
 #FD0054
@@ -73,18 +74,20 @@ hr {
   background-position: center;
   background-size: cover;
 
-  text-shadow: 2px 3px 1px #131323;
+  text-shadow: 2px 3px 3px #131323;
 
   text-align: center;
   padding: 100px;
 }
 
 .header h1 {
-  font-size: 6em;
+  font-size: 5em;
   margin: 0 0 10px;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: normal;
-  font-family: 'Staatliches', cursive;
+  letter-spacing: 10px; /*TEST*/
+  margin: 100px 0; /*TEST*/
+  /*font-family: 'Staatliches', cursive;*/
 }
 
 .header h2 {
