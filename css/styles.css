@@ -4,14 +4,6 @@ https://colorhunt.co/palette/fbf9fafd0054a800382b2024 red-white
 #FD0054
 #FBF9FA
 #131323
-
-*/
-
-/*
-Ilmaris custom
-#EE1E7B
-#231F20
-#FFFFFF
 */
 
 body {
@@ -39,28 +31,50 @@ hr {
 /* NAVIGATION BAR */
 .navbar {
   background-color: #A80038;
-  padding: 12px 0;
 }
 
- /* PLACEHOLDER!! */
-.navbar p {
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar a {
+  display: block;
+  color: #FBF9FA;
   text-align: center;
   font-size: 1.2em;
-  margin: 0;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar img {
+  width: 80px;
+  float: left;
+  margin: 12px;
 }
 
 /* HEADER */
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url("../images/hovinsaari.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url("../images/meri.jpg");
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 
   text-shadow: 2px 3px 1px #FD0054;
 
   text-align: center;
-  padding: 50px;
+  padding: 100px;
 }
 
 .header h1 {
@@ -122,6 +136,23 @@ hr {
 .profile-picture img {
   width: 80%;
   border-radius: 100%;
+}
+
+/* OUR TEAM PLACEHOLDER */
+.team-entry {
+  padding: 0 0 200px;
+}
+
+.team-entry p {
+  width: 70%;
+  float: right;
+}
+
+.team-entry img {
+  padding: 20px 0 0;
+  border-radius: 100%;
+  width: 20%;
+  float : left;
 }
 
 /* GAMES */

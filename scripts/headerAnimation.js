@@ -1,4 +1,4 @@
-var h2Text = document.querySelector("h2");
+var header = document.getElementsByClassName("header-content")[0];
 var opacity = 0;
 
 animateIcon();
@@ -19,6 +19,6 @@ function animateIcon() {
       timer = null;
     }
 
-    h2Text.style.opacity = opacity;
+    header.style.opacity = opacity;
   }, 10)
 }
