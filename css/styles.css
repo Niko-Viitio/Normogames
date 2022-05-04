@@ -34,6 +34,8 @@ hr {
 .navbar {
   background-color: #A80038;
   background-image: linear-gradient(45deg, #131323 , #A80038);
+
+  text-align: center;
 }
 
 .navbar ul {
@@ -44,26 +46,34 @@ hr {
 }
 
 .navbar li {
-  float: right;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .navbar a {
   display: block;
   color: #FBF9FA;
   text-align: center;
-  font-size: 1.2em;
-  padding: 12px;
+  font-size: 1.4em;
+  padding: 15px;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .navbar img {
-  width: 80px;
-  float: left;
-  margin: 12px;
+  width: 140px;
+  height: auto;
+  vertical-align: middle
+}
+
+.active {
+  border: 4px solid #FBF9FA;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
 }
 
 /* HEADER */
@@ -76,8 +86,10 @@ hr {
 
   text-shadow: 2px 3px 3px #131323;
 
-  text-align: center;
-  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 .header h1 {
@@ -86,7 +98,6 @@ hr {
   text-decoration: none;
   font-weight: normal;
   letter-spacing: 10px; /*TEST*/
-  margin: 100px 0; /*TEST*/
   /*font-family: 'Staatliches', cursive;*/
 }
 
@@ -96,8 +107,8 @@ hr {
   font-weight: 600;
 }
 
-.header img {
-  width: 800px;
+.header-content {
+  text-align: center;
 }
 
 /* BODY */
