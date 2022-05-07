@@ -1,4 +1,5 @@
 var header = document.getElementsByClassName("header-content")[0];
+var h1 = header.getElementsByTagName("h1")[0];
 var h2 = header.getElementsByTagName("h2")[0];
 
 //Setup h2, store it and clear it
@@ -12,6 +13,10 @@ header.style.opacity = opacity;
 
 //Animate icon, fade in the header
 animateIcon();
+
+//Start inserting h2 text
+if (h2 != null)
+  insertText();
 
 //Animates icon by fading it in
 function animateIcon() {
@@ -27,10 +32,6 @@ function animateIcon() {
 
       clearInterval(timer);
       timer = null;
-
-      //Start inserting h2 text
-      if (h2 != null)
-        insertText();
     }
 
     header.style.opacity = opacity;
@@ -39,22 +40,20 @@ function animateIcon() {
 
 //Animates text by insersting it one by opponents
 function insertText() {
-  const timeToAnimate = 800;
+  const timeToAnimate = 1000;
   var string = h2OriginalText;
   var animateTime = timeToAnimate / string.length;
   h2.textContent = ""; //First letter is only shown
 
   var index = -1;
   let timer = setInterval(function() {
-    if (opacity == 1) {
-      if (index < string.length - 1) {
-        index++;
-        h2.textContent += string[index];
-      }
-      else {
-        clearInterval(timer);
-        timer = null;
-      }
+    if (index < string.length - 1) {
+      index++;
+      h2.textContent += string[index];
+    }
+    else {
+      clearInterval(timer);
+      timer = null;
     }
   }, animateTime)
 }
