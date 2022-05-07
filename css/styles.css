@@ -37,8 +37,7 @@ hr {
 .pictures-wrapper {
   position: relative;
   width: 100%;
-  top: 100px;
-  margin: auto 0 -250px;
+  margin-top: 70px;
   display:inline-block
 }
 
@@ -50,7 +49,7 @@ hr {
   background-size: cover;
 
   position: relative; /*Needed for z-index*/
-  top: -150px;
+  margin-bottom: -80px;
 }
 
 .platformity {
@@ -61,7 +60,7 @@ hr {
   background-size: cover;
 
   position: relative; /*Needed for z-index*/
-  top: -250px;
+  margin-bottom: -50px;
 }
 
 .awards {
@@ -73,7 +72,7 @@ hr {
 
   padding: 80px 0;
   position: relative; /*Needed for z-index*/
-  top: -50px;
+  margin-bottom: -100px;
 }
 
 .awards li {
