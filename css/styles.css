@@ -34,8 +34,12 @@ hr {
   position: relative; /*Needed for z-index*/
 }
 
-.games-wrapper {
-  transform: translateY(-50px);
+.pictures-wrapper {
+  position: relative;
+  width: 100%;
+  top: 100px;
+  margin: auto 0 -250px;
+  display:inline-block
 }
 
 .riflemen {
@@ -46,7 +50,7 @@ hr {
   background-size: cover;
 
   position: relative; /*Needed for z-index*/
-  transform: translateY(200px);
+  top: -150px;
 }
 
 .platformity {
@@ -57,7 +61,25 @@ hr {
   background-size: cover;
 
   position: relative; /*Needed for z-index*/
-  transform: translateY(100px);
+  top: -250px;
+}
+
+.awards {
+  background-image: url("../images/shipfestival.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/shipfestival.jpg");
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 80px 0;
+  position: relative; /*Needed for z-index*/
+  top: -50px;
+}
+
+.awards li {
+  font-size: 1.5em;
+  line-height: 2;
+  text-align: center;
 }
 
 /* SKEWS */
@@ -169,7 +191,7 @@ hr {
   text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   .header-content {
     transform: scale(0.8);
   }
@@ -183,7 +205,7 @@ hr {
 
 @media only screen and (max-width: 500px) {
   .header-content {
-    transform: scale(0.55);
+    transform: scale(0.5);
   }
 }
 
@@ -191,7 +213,7 @@ hr {
 .body-content {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
   padding: 100px 0;
 }
 
@@ -204,6 +226,10 @@ hr {
 .body-content p {
   font-size: 1.4em;
   text-align: justify;
+}
+
+.zoomable {
+  transition: all .1s ease-in-out;
 }
 
 /* PROFILES */
@@ -240,7 +266,7 @@ hr {
   padding: 20px 0 0;
   border-radius: 100%;
   width: 20%;
-  float : left;
+  float: left;
 }
 
 /* GAMES */
