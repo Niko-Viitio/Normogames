@@ -285,10 +285,28 @@ hr {
 }
 
 .team-entry img {
-  padding: 20px 0 0;
+  margin-top: 20px;
   border-radius: 100%;
-  width: 20%;
+  width: 190px;
   float: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .team-entry {
+    padding: 0 0 10px;
+    text-align: center;
+  }
+
+  .team-entry p {
+    width: 100%;
+    float: none;
+    text-align: justify;
+  }
+
+  .team-entry img {
+    width: 200px;
+    float: none;
+  }
 }
 
 /* GAMES */
