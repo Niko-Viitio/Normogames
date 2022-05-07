@@ -81,6 +81,14 @@ hr {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .awards li {
+    font-size: 1.4em;
+    line-height: 2;
+    text-align: left;
+  }
+}
+
 /* SKEWS */
 .white.skew-right {
   transform-origin: top right;
@@ -150,6 +158,17 @@ hr {
   border-top-style: hidden;
   border-left-style: hidden;
   border-right-style: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar a {
+    font-size: 1.3em;
+  }
+
+  .navbar img {
+    width: 120px;
+    height: auto;
+  }
 }
 
 /* HEADER */
