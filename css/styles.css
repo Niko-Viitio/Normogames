@@ -70,13 +70,13 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 80px 0;
+  padding: 70px 0;
   position: relative; /*Needed for z-index*/
   margin-bottom: -100px;
 }
 
 .awards li {
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 2;
   text-align: center;
 }
@@ -294,7 +294,7 @@ hr {
 /* GAMES */
 .game-content {
   width: 500px;
-  padding: 40px 0 100px;
+  padding: 50px 0 100px;
 }
 
 .platformity .game-content {
@@ -308,6 +308,21 @@ hr {
 
 .riflemen h4 {
   text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+  .game-content {
+    width: 100%;
+    padding: 25px 0 50px;
+  }
+
+  .platformity .game-content, .riflemen .game-content {
+    margin: auto;
+  }
+
+  .platformity h4, .riflemen h4 {
+    text-align: center;
+  }
 }
 
 .game-content h4 {
