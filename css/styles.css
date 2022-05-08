@@ -177,7 +177,7 @@ hr {
 
 /* HEADER */
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url("../images/meri.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/meri.jpg");
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;

@@ -6,17 +6,19 @@ var h2 = header.getElementsByTagName("h2")[0];
 if (h2 != null) {
   var h2OriginalText = h2.textContent;
   h2.textContent = "";
+  insertText();
 }
 
+//Setup headers opacity
 var opacity = 0;
 header.style.opacity = opacity;
 
 //Animate icon, fade in the header
 animateIcon();
 
-//Start inserting h2 text
-if (h2 != null)
-  insertText();
+//Start fading background
+if (background != null)
+  fadeInBackground();
 
 //Animates icon by fading it in
 function animateIcon() {
