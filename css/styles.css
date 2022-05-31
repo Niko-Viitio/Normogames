@@ -25,6 +25,11 @@ hr {
   border: 2px solid;
 }
 
+a {
+  color: #FBF9FA;
+  font-size: 1.4em;
+}
+
 /* BACKGROUNDS */
 .white {
   color:  #131323;
