@@ -16,10 +16,6 @@ header.style.opacity = opacity;
 //Animate icon, fade in the header
 animateIcon();
 
-//Start fading background
-if (background != null)
-  fadeInBackground();
-
 //Animates icon by fading it in
 function animateIcon() {
   const timeToAnimate = 800;
