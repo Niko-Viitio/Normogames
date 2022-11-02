@@ -182,7 +182,7 @@ a {
 
 /* HEADER */
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/meri.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/Polygons.png");
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
@@ -195,6 +195,7 @@ a {
   align-items: center;
   height: 500px;
 
+  overflow: hidden; /* Fixes character-holder becoming too wide and causing white space */
   position: relative;
   z-index: 1;
 }
@@ -225,6 +226,28 @@ a {
   text-align: center;
 }
 
+.header-characters {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  min-width: 1300px;
+  margin: auto;
+  z-index: -1;
+}
+
+.header-skeleton {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+.header-soldier {
+  transform: scaleX(-1);
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+}
+
 @media only screen and (max-width: 800px) {
   .header {
     height: 400px;
@@ -233,25 +256,61 @@ a {
   .header-content {
     transform: scale(0.8);
   }
+
+  .header-characters {
+    min-width: 1000px;
+  }
+
+  .header-skeleton {
+    transform: scale(0.7) translateY(21%);
+  }
+
+  .header-soldier {
+    transform: scale(-0.7, 0.7) translateY(21%);
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
-    height: 350px;
-  }
-
-  .header-content {
-    transform: scale(0.65);
-  }
-}
-
-@media only screen and (max-width: 500px) {
   .header {
     height: 300px;
   }
 
   .header-content {
+    transform: scale(0.65);
+  }
+
+  .header-characters {
+    min-width: 900px;
+  }
+
+  .header-skeleton {
+    transform: scale(0.5) translateY(49%);
+  }
+
+  .header-soldier {
+    transform: scale(-0.5, 0.5) translateY(49%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 250px;
+  }
+
+  .header-content {
     transform: scale(0.5);
+  }
+
+  .header-characters {
+    min-width: 800px;
+  }
+
+  .header-skeleton {
+    transform: scale(0.4) translateY(73%);
+  }
+
+  .header-soldier {
+    transform: scale(-0.4, 0.4) translateY(73%);
   }
 }
 
