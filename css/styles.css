@@ -35,41 +35,18 @@ a {
   color:  #131323;
   background-color: #FBF9FA;
   position: relative; /*Needed for z-index*/
+
+  width: 100%;
+  display: table;
 }
 
 .red {
   color: #FBF9FA;
   background-image: linear-gradient(75deg, #131323, #A80038);
   position: relative; /*Needed for z-index*/
-}
 
-.pictures-wrapper {
-  position: relative;
   width: 100%;
-  margin-top: 70px;
-  display:inline-block
-}
-
-.riflemen {
-  background-image: url("../images/TheRiflemen2.png");
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/TheRiflemen2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: relative; /*Needed for z-index*/
-  margin-bottom: -80px;
-}
-
-.platformity {
-  background-image: url("../images/Platformity2.png");
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/Platformity2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: relative; /*Needed for z-index*/
-  margin-bottom: -50px;
+  display: table;
 }
 
 .awards {
@@ -182,7 +159,8 @@ a {
 
 /* HEADER */
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/Polygons.png");
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(168, 0, 56, 0.2)), url("../images/Polygons.png");*/
+  background-image: linear-gradient(45deg, rgba(168, 0, 56, 0.3), rgba(19, 19, 35, 0.3)), url("../images/Polygons.png");
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
@@ -316,26 +294,47 @@ a {
 
 /* BODY */
 .body-content {
-  width: 90%;
+  width: 80%;
   max-width: 900px;
-  margin: auto;
-  padding: 100px 0;
+  margin: 100px auto 100px;
 }
 
-.body-content h3 {
+.game-content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 80px auto 80px;
+  display: table;
+}
+
+.game-content-middle {
+  width: 80%;
+  max-width: 1200px;
+  margin: 125px auto 150px;
+  display: table;
+}
+
+.body-content h3, .game-content h3, .game-content-middle h3 {
   font-size: 2em;
   margin: 0 auto 15px;
   text-align: center;
 }
 
-.body-content p {
+.body-content p, .game-content p, .game-content-middle p {
   font-size: 1.4em;
   text-align: justify;
 }
 
+/* For scripts */
+.fade-in {
+  height: 100%;
+  transition: all .5s ease-in-out;
+  transform: translateY(75px);
+  opacity: 0;
+}
+
 .zoomable {
+  height: 100%;
   transition: all .2s ease-in-out;
-  opacity: 1;
 }
 
 /* PROFILES */
@@ -405,47 +404,64 @@ a {
 }
 
 /* GAMES */
-.game-content {
-  width: 500px;
-  padding: 50px 0 100px;
+.game-content iframe, .game-content-middle iframe {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.platformity .game-content {
-  margin-left: auto;
-  margin-right: 0;
+.riflemen-character {
+  transform: scale(0.7) translate(-180px, 10px);
+  height: 0;
+  float: left;
 }
 
-.platformity h4 {
-  text-align: right;
+.game-desc-right {
+  float: right;
+  width: 560px;
 }
 
-.riflemen h4 {
-  text-align: left;
+.heal-hurt-character {
+  transform: scale(1) translateY(-200px);
+  height: 0;
+  padding-top: 25px;
+  float: right;
 }
 
-@media only screen and (max-width: 700px) {
-  .game-content {
-    width: 100%;
-    padding: 25px 0 50px;
+.game-desc-left {
+  float: left;
+  width: 560px;
+}
+
+.platformity-character {
+  transform: scale(1.45) translate(40px, 90px);
+  float: left;
+}
+
+@media only screen and (max-width: 1500px) {
+  .riflemen-character, .heal-hurt-character, .platformity-character {
+    display: none;
   }
 
-  .platformity .game-content, .riflemen .game-content {
+  .game-desc-left, .game-desc-right {
+    float: none;
     margin: auto;
+    width: 100%;
   }
 
-  .platformity h4, .riflemen h4 {
-    text-align: center;
+  .game-content, .game-content-middle {
+    width: 80%;
+    max-width: 900px;
   }
-}
 
-.game-content h4 {
-  font-size: 1.5em;
-  font-weight: 600;
-  margin: 0;
-}
-
-.game-content hr {
-  border: 1px solid;
+  .game-content iframe, .game-content-middle iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 20px;
+    aspect-ratio: 16 / 9;
+  }
 }
 
 /* FOOTER */

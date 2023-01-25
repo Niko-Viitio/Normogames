@@ -1,4 +1,4 @@
-var header = document.getElementsByClassName("header-content")[0];
+const header = document.getElementsByClassName("header-content")[0];
 var h1 = header.getElementsByTagName("h1")[0];
 var h2 = header.getElementsByTagName("h2")[0];
 
